@@ -1,0 +1,45 @@
+/* Options */
+.sideButton {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    height: auto;
+    border-radius: 15px;
+    gap: 5px;
+    padding: 40px;
+    background-color: var(--body-background, white);
+}
+
+.sideButton:hover {
+    background-color: var(--button-background, #BBDAFF);
+}
+
+.sideButton:hover .text{
+    color: var(--button-color, #0075FF);
+}
+
+@media (max-width: 1700px) {
+    
+  }
+
+  @media (max-width: 1440px) {
+    
+  }
+
+  @media (max-width: 1080px) {
+    .sideButton {
+      padding: 30px;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .sideButton {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .sideButton {
+      padding: 15px;
+    }
+  }

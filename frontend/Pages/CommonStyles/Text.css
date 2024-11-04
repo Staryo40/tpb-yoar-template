@@ -1,0 +1,198 @@
+/* Texts in general */
+.text {
+    font-family: 'inter';
+    color: var(--body-color, rgb(0, 0, 0));
+}
+
+.text p { /* for markdown */
+    font-family: 'inter';
+    color: var(--body-color, rgb(0, 0, 0));
+}
+
+/* Main content texts */
+.generalTitleH1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.generalTitleH2 {
+    font-size: 32px;
+    margin: 0;
+    width: fit-content;
+    border-bottom: 3px solid #0075FF;
+}
+
+.generalTitleH3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.generalContentP {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.generalContentP p { /* for markdown */
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    font-weight: bold;
+    cursor: pointer
+}
+
+.link.bold:hover {
+    transform: scale(1.01);
+}
+
+/* Related to images */
+.imageDetailBottom {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-5px);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.imageDetailTop {
+    display: flex;
+    justify-content: center;
+    transform: translateY(5px);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+/* Sidebar texts */
+.sideTitle {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.sideTitleIn {
+    margin: 0;
+    font-size: 35px;
+}
+
+.SNText {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1440px) {
+    .generalTitleH1 {
+        font-size: 30px;
+    }
+    .generalTitleH2 {
+        font-size: 24px;
+    }
+    .generalTitleH3 {
+        font-size: 21px;
+    }
+    
+    .generalContentP {
+        font-size: 15px;
+    }
+    .generalContentP p {
+        font-size: 15px;
+    }
+    .SNText {
+        font-size: 15px;
+    }
+
+    .sideTitle {
+        font-size: 22.5px;
+    }
+
+    .sideTitleIn {
+        font-size: 22.5px;
+    }
+    
+    .imageDetailBottom {
+        font-size: 13.75px;
+    }
+
+    .imageDetailTop {
+        font-size: 13.75px;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .generalTitleH1 {
+        font-size: 20px;
+    }
+    .generalTitleH2 {
+        font-size: 16px;
+    }
+    .generalTitleH3 {
+        font-size: 14px;
+    }
+    
+    .generalContentP {
+        font-size: 10px;
+    }
+    .generalContentP p {
+        font-size: 10px;
+    }
+    .SNText {
+        font-size: 10px;
+    }
+
+    .sideTitle {
+        font-size: 15px;
+    }
+
+    .sideTitleIn {
+        font-size: 15px;
+    }
+
+    .imageDetailBottom {
+        font-size: 9px;
+    }
+
+    .imageDetailTop {
+        font-size: 9px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .generalTitleH1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .sideTitle {
+        font-size: 15px;
+    }
+
+    .sideTitleIn {
+        font-size: 15px;
+    }
+    .imageDetailBottom {
+        font-size: 7px;
+    }
+
+    .imageDetailTop {
+        font-size: 7px;
+    }
+  }

@@ -1,0 +1,57 @@
+.LDswitch {
+    position: relative;
+    height: 30px;
+    width: 60px;
+}
+
+.LDswitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* light gray background */
+.LDswitch .slider {
+    position: absolute;
+    cursor: pointer;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    width: 60px;
+    padding: 0; /* Adjust padding to ensure the image starts at the left */
+
+    background-color: #E4E4E4;
+}
+
+.LDswitch .slider img {
+    position: absolute;
+    left: 7.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s;
+}
+
+/* dark gray circle */
+.LDswitch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 3px;
+    bottom: 2px;
+    background-color: #5A5A5A;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+
+input:checked + .slider:before {
+    transform: translateX(28px);
+
+}
+
+input:checked + .slider img {
+    transform: translate(28px, -50%);
+}

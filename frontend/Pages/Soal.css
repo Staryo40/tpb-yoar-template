@@ -1,0 +1,313 @@
+/* Soal Main Content */
+.SoalContent {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 570px;
+}
+
+/* Disclaimer */
+.SoalContent .topInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-background, white);
+    border-radius: 15px;
+    padding: 20px 60px;
+    gap: 15px;
+}
+
+.SoalContent .topInfo h2{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.SoalContent .disclaimer p{
+    color: red;
+}
+
+/* Tag Info */
+.SoalContent .tagInfo {
+    cursor: pointer;
+}
+
+.SoalContent .tagInfo.open {
+    cursor: default;
+}
+
+.SoalContent .tagInfo:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.SoalContent .tagInfo.open:hover {
+    box-shadow: none;
+}
+
+
+.SoalContent .tagInfoTable {
+    display: grid;
+    grid-template-columns: 2fr 8fr; 
+    width: 100%; 
+}
+
+.SoalContent .tagInfoTable .tableTitle {
+    grid-column: 1 / -1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    font-weight: bold; 
+    border: 1px solid #ccc;
+  }
+
+.SoalContent .tagInfoTable .tableCell {
+    display: flex;
+    align-items: center;
+    padding: 5px; 
+    border: 1px solid #ccc; 
+  }
+
+.SoalContent .tagInfoTable .tagCell {
+    justify-content: center;
+}
+
+.closeButton{ /* close button in SoalTop */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0075FF;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.closeButton:hover {
+    cursor: pointer;
+}
+
+
+/* Tags */
+.tagItem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0 15px;
+    white-space: nowrap; 
+    font-size: 15px;
+
+    font-family: 'inter';
+    color: white;
+}
+
+/* Soal Item */
+/* Main question */
+.SoalContent .soalItem {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-background, white);
+    border-radius: 15px;
+    padding: 20px 60px;
+    gap: 15px;
+}
+
+/* Question header and main content */
+.SoalContent .soalItem .soalHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SoalContent .soalItem .soalHeader h2{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.SoalContent .soalItem .soalTags{
+    display: flex;
+    gap: 10px;
+}
+
+.SoalContent .soalItem .soalQuestion{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Soal Solution */
+.solution {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    border: 1px solid #5A5A5A;
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.solution .solutionHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solution .solutionHeader .solutionText{
+    font-size: 24px;
+}
+
+.SoalContent .soalItem button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0075FF;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.SoalContent .soalItem button:hover {
+    cursor: pointer;
+}
+
+.solution .solutionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Soal Sidebar */
+
+/* SideNav */
+
+.SideNavSoal {
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    background-color: var(--body-background, white);
+    border-radius: 15px;
+    padding: 20px;
+    gap: 0;
+}
+
+
+.SideNavSoal .SNTextSoal{
+    padding: 10px 60px;
+    color: var(--body-color, black);
+}
+
+.SideNavSoal .SNTextSoal:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    .SoalContent {
+        margin-right: 420px;
+    }
+    .SoalContent .soalItem {
+        padding: 20px 50px;
+        gap: 15px;
+    }
+    .SoalContent .topInfo h2{
+        font-size: 22.5px;
+    }
+    .SoalContent .soalItem .tagItem{
+        height: 25px;
+        font-size: 13px;
+    }
+    .SoalContent .soalItem button{
+        width: 50px;
+        height: 25px;
+        font-size: 13px;
+    }
+    .SoalContent .soalItem .soalHeader h2{
+        font-size: 18px;
+    }
+    .solution .solutionHeader .solutionText{
+        font-size: 18px;
+    }
+    .SideNavSoal .SNTextSoal{
+        padding: 10px 50px;
+    }
+    .SideNavSoal {
+        padding: 18px;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .SoalContent .soalItem {
+        padding: 20px 40px;
+        gap: 15px;
+    }
+    .SoalContent {
+        margin-right: 320px;
+    }
+    .SoalContent .soalItem .tagItem{
+        height: 20px;
+        font-size: 10px;
+    }
+    .SoalContent .soalItem button{
+        width: 40px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .SideNavSoal .SNTextSoal{
+        padding: 8px 40px;
+    }
+    .SideNavSoal {
+        padding: 15px;
+    }
+    .SoalContent .soalItem .soalTags{
+        gap: 8px;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .SoalContent .soalItem {
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    .SoalContent .topInfo h2{
+        font-size: 15px;
+    }
+    .SoalContent {
+        margin-right: 270px;
+    }
+    .SoalContent .soalItem .soalHeader h2{
+        font-size: 12px;
+    }
+    .solution .solutionHeader .solutionText{
+        font-size: 12px;
+    }
+    .SideNavSoal .SNTextSoal{
+        padding: 5px 30px;
+    }
+    .SideNavSoal {
+        padding: 10px;
+    }
+    .SoalContent .soalItem .soalTags{
+        gap: 5px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .SoalContent {
+        margin-right: 220px;
+    }
+    .SideNavSoal .SNTextSoal{
+        padding: 5px 20px;
+    }
+    .SoalContent .soalItem .soalTags{
+        gap: 3px;
+    }
+  }
+
+

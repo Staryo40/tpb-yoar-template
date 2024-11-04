@@ -1,0 +1,43 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--bg-background, #E4E4E4);
+}
+
+:root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+  /* colors */
+  --bg-background: #E4E4E4;
+  --body-background: white;
+  --body-color: black;
+  --button-background: #BBDAFF;
+  --button-color: #0075FF;
+  --navfoot-color: #5A5A5A;
+  --dropdown-triangle: #adadad;
+  --dropdown-triangle-hover: black;
+  --line-color: #5A5A5A;
+}
+
+[data-theme="dark"] {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+  /* colors */
+  --bg-background: #3f3f3f;
+  --body-background: black;
+  --body-color: white;
+  --button-background: #0075ff;
+  --button-color: white;
+  --navfoot-color: #E4E4E4;
+  --dropdown-triangle: #6b6b6b;
+  --dropdown-triangle-hover: white;
+  --line-color: white;
+}
+
+

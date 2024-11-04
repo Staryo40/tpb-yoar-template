@@ -1,0 +1,137 @@
+.MacroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.storage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+}
+
+.MainContainer {
+    display: flex;
+    width: 95%;
+    margin-top: 60px; /* ensures it doesn't get blocked by navbar */
+    padding-top: 24px; /* distance from navbar to content */
+    gap: 20px;
+}
+
+/* Main Content */
+.MainContent {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--body-background, white);
+    padding: 60px;
+    border-radius: 15px;
+}
+
+.MainContentFixed { /* sidebar is fixed */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--body-background, white);
+    padding: 60px;
+    border-radius: 15px;
+    margin-right: 570px;
+}
+
+/* Sidebar */
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    gap: 20px
+}
+
+.SidebarFixed {
+    position: fixed;
+    right: 2.5%;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    gap: 20px;
+    height: 84vh;
+}
+
+@media (max-width: 1440px) {
+    .Sidebar {
+        width: 400px;
+    }
+    
+    .SidebarFixed {
+        width: 400px;
+        height: 75vh;
+    }
+
+    .MainContentFixed {
+        margin-right: 420px;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .MainContent {
+        padding: 50px;
+    }
+
+    .MainContentFixed {
+        padding: 50px;
+        margin-right: 320px;
+    }
+
+    .Sidebar {
+        width: 300px;
+        gap: 15px;
+    }
+    
+    .SidebarFixed {
+        width: 300px;
+        gap: 15px;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .MainContent {
+        padding: 40px;
+    }
+
+    .MainContentFixed {
+        padding: 40px;
+        margin-right: 270px;
+    }
+    .Sidebar {
+        width: 250px;
+        gap: 10px;
+    }
+    
+    .SidebarFixed {
+        width: 250px;
+        gap: 10px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .MainContent {
+        padding: 30px;
+    }
+
+    .MainContentFixed {
+        padding: 30px;
+        margin-right: 220px;
+    }
+    .Sidebar {
+        width: 200px;
+    }
+    
+    .SidebarFixed {
+        width: 200px;
+    }
+  }

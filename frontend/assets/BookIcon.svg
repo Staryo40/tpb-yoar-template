@@ -1,0 +1,20 @@
+<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3" y="1" width="19" height="5" rx="1" fill="#E7E7E7"/>
+<rect x="1" y="8" width="19" height="5" rx="1" fill="#E7E7E7"/>
+<rect x="3" y="15" width="19" height="5" rx="1" fill="#E7E7E7"/>
+<line x1="2" y1="0.5" x2="21" y2="0.5" stroke="#FF3636"/>
+<line x1="2" y1="6.5" x2="21" y2="6.5" stroke="#FF3636"/>
+<line x1="2" y1="7.5" x2="21" y2="7.5" stroke="#77FF37"/>
+<line x1="2" y1="14.5" x2="21" y2="14.5" stroke="#0075FF"/>
+<line x1="2" y1="13.5" x2="21" y2="13.5" stroke="#77FF37"/>
+<line x1="2" y1="20.5" x2="21" y2="20.5" stroke="#0075FF"/>
+<line x1="21" y1="1.5" x2="22" y2="1.5" stroke="#FF3636"/>
+<line x1="22.5" y1="5" x2="22.5" y2="2" stroke="#FF3636"/>
+<line x1="0.5" y1="12" x2="0.5" y2="9" stroke="#77FF37"/>
+<line x1="22.5" y1="19" x2="22.5" y2="16" stroke="#0075FF"/>
+<line x1="21" y1="5.5" x2="22" y2="5.5" stroke="#FF3636"/>
+<line x1="1" y1="8.5" x2="2" y2="8.5" stroke="#77FF37"/>
+<line x1="1" y1="12.5" x2="2" y2="12.5" stroke="#77FF37"/>
+<line x1="21" y1="15.5" x2="22" y2="15.5" stroke="#0075FF"/>
+<line x1="21" y1="19.5" x2="22" y2="19.5" stroke="#0075FF"/>
+</svg>

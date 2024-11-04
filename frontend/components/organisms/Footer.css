@@ -1,0 +1,13 @@
+/* General */
+.containerFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: var(--body-background, white);
+} 
+
+/* Special */

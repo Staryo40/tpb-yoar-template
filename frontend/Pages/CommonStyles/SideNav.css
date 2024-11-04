@@ -1,0 +1,161 @@
+/* Big Container */
+.SideNavContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    /* IE and Edge */
+    -ms-overflow-style: none;  
+    /* Firefox */
+    scrollbar-width: none;  
+}
+
+.SideNavContainer::-webkit-scrollbar {
+    /* Safari and Chrome */
+    display: none; 
+}
+
+/* inside container */
+.SideNav {
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    background-color: var(--body-background, white);
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* distance between components */
+.SideNavItem {
+    display: flex;
+    width: auto;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+
+/* Distance between index and tag */
+.SNTextContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.SNTextContainer .SNIndex {
+    width: 30px;
+}
+
+.SNTextContainer:hover .SNText{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.SNTextContainer .SNMainText{
+    max-width: 300px;
+}
+
+/* Dropdown parent */
+.SNDropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 80px;
+
+}
+
+.SNIndexDropdown {
+    width: 30px;
+}
+
+.SNMainDropdown {
+    max-width: 300px;
+}
+
+  @media (max-width: 1440px) {
+    .SideNavItem {
+        padding: 0 40px;
+    }
+    .SNTextContainer .SNIndex {
+        width: 25px;
+    }
+    .SNTextContainer .SNMainText{
+        max-width: 220px;
+    }
+  
+    .SNIndexDropdown {
+        width: 25px;
+    }
+    .SNMainDropdown {
+        max-width: 165px;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .SideNav {
+        gap: 15px;
+    }
+    .SideNavItem {
+        padding: 0 30px;
+    }
+    .SNTextContainer .SNIndex {
+        width: 20px;
+    }
+    .SNTextContainer .SNMainText{
+        max-width: 150px;
+    }
+  
+    .SNIndexDropdown {
+        width: 20px;
+    }
+    .SNDropdown {
+        padding: 0 55px;
+    }
+    .SNMainDropdown {
+        max-width: 120px;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .SideNav {
+        gap: 10px;
+    }
+    .SideNavItem {
+        padding: 0 20px;
+    }
+    .SNTextContainer .SNIndex {
+        width: 12px;
+    }
+    .SNTextContainer .SNMainText{
+        max-width: 135px;
+    }
+    .SNIndexDropdown {
+        width: 12px;
+    }
+    .SNDropdown {
+        padding: 0 40px;
+    }
+    .SNMainDropdown {
+        max-width: 100px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .SNTextContainer .SNIndex {
+        width: 10px;
+    }
+    .SideNavItem {
+        padding: 0 10px;
+    }
+    .SNTextContainer .SNMainText{
+        max-width: 105px;
+    }
+  
+    .SNIndexDropdown {
+        width: 10px;
+    }
+    .SNDropdown {
+        padding: 0 30px;
+    }
+    .SNMainDropdown {
+        max-width: 80px;
+    }
+  }

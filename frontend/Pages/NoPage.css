@@ -1,0 +1,76 @@
+.noPageFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/Rick Astley Background.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.noPageTextStyle {
+    font-family: 'inter';
+    color: black;
+    font-weight: normal;
+}
+
+.middleContentContainer {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 3vw;
+    gap: 1.5vw;
+}
+
+.centerTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noPageTitle {
+    font-size: 5vw;
+    margin: 0;
+    font-family: 'inter';
+}
+
+.noPageText {
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+.noPageGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.gameDescription {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5vw;
+    font-size: 1.3vw;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.gameDescription p {
+    margin: 0;
+}
+
+.gachaButton {
+    border-radius: 15px;
+    font-size: 1.5vw;
+    background-color: #5A5A5A;
+    color:white;
+    border: none;
+    width: 20em;
+    height: 2em;
+}
+
+.gachaButton:hover {
+    background-color: #0075FF;
+    cursor: pointer;
+}

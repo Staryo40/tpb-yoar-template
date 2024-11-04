@@ -1,0 +1,15 @@
+.quoteP {
+    text-align: center;
+}
+
+.randomQuoteButton {
+    border-radius: 15px;
+    border-color: gray;
+    padding: 5px;
+}
+
+.randomQuoteButton:hover {
+    cursor: pointer;
+    background-color: #0075FF;
+    color: white;
+}

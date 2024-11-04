@@ -1,0 +1,61 @@
+{
+    "matakuliah": {
+        "icon": "📚",
+        "name": "Mata Kuliah",
+        "listItem": [
+            {"itemName": "Matematika A",
+            "link": "/mkbagian"}, 
+            {"itemName": "Fisika Dasar A",
+            "link": "/mkbagian"}, 
+            {"itemName": "Kimia Dasar B",
+            "link": "/mkbagian"},
+            {"itemName": "Tata Tulis Karya Ilmiah",
+            "link": "/mkbagian"},
+            {"itemName": "Bahasa Inggris",
+            "link": "/mkbagian"},
+            {"itemName": "Pengantar Rekayasa Desain",
+            "link": "/mkbagian"},
+            {"itemName": "Pengenalan Komputasi",
+            "link": "/mkbagian"},
+            {"itemName": "Olahraga",
+            "link": "/mkbagian"},
+            {"itemName": "Dasar Pemrograman",
+            "link": "/mkbagian"},
+            {"itemName": "Komputasi dan Masyarakat",
+            "link": "/mkbagian"}
+        ]
+    },
+    "materi": {
+        "icon": "📖",
+        "name": "Materi",
+        "listItem": [
+            {"itemName": "Matematika IA",
+            "link": "/materi"}, 
+            {"itemName": "Matematika IIA",
+            "link": "/materi"}, 
+            {"itemName": "Fisika Dasar IA",
+            "link": "/materi"}, 
+            {"itemName": "Fisika Dasar IIA",
+            "link": "/materi"}, 
+            {"itemName": "Kimia Dasar B",
+            "link": "/materi"}
+        ]
+    },
+    "soal": {
+        "icon": "✏️",
+        "name": "Soal",
+        "listItem": [
+            {"itemName": "Matematika IA",
+            "link": "/soal"}, 
+            {"itemName": "Matematika IIA",
+            "link": "/soal"}, 
+            {"itemName": "Fisika Dasar IA",
+            "link": "/soal"}, 
+            {"itemName": "Fisika Dasar IIA",
+            "link": "/soal"}, 
+            {"itemName": "Kimia Dasar B",
+            "link": "/soal"}
+        ]
+    }
+
+}

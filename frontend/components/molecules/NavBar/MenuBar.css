@@ -1,0 +1,28 @@
+.MenuBar {
+    display: flex;
+    gap: 60px;
+}
+
+@media (max-width: 1500px) {
+  .MenuBar {
+    gap: 30px; 
+  }
+}
+
+@media (max-width: 1300px) {
+    .MenuBar {
+      gap: 20px; 
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .MenuBar {
+      gap: 10px; 
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .MenuBar {
+      gap: 5px; 
+    }
+  }

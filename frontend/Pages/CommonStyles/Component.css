@@ -1,0 +1,239 @@
+/* Section of text */
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.equation {
+	display: flex;
+	justify-content: center;
+}
+
+.greyLine {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+	border: 1px solid var(--line-color, #5A5A5A);
+}
+
+.blueLine {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 3px solid #0075FF;
+}
+/* images have a max of 1100px  */
+.imageContainer {
+    display: flex;
+    justify-content: center;
+	max-width: 1100px;
+	padding: 10px;
+}
+
+.imageContainer img{
+	max-width: 100%;
+	width: auto;
+}
+
+/* Lists */
+.listContainer {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+/* ordered list */
+.listContainer ol {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+/* ol index styling */
+.listContainer ol.number {
+	list-style-type: decimal;
+}
+
+.listContainer ol.lowerAlph {
+	list-style-type: lower-alpha;
+}
+
+.listContainer ol.upperAlph {
+	list-style-type: upper-alpha;
+}
+
+.listContainer ol.lowerRoman {
+	list-style-type: lower-roman;
+}
+
+.listContainer ol.upperRoman {
+	list-style-type: upper-roman;
+}
+
+/* unordered list */
+.listContainer ul {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+/* ul index styling */
+.listContainer ul.bullet {
+	list-style-type: disc;
+}
+
+.listContainer ul.none {
+	list-style-type: none;
+}
+
+.listContainer ul.circle {
+	list-style-type: circle;
+}
+
+.listContainer ul.square {
+	list-style-type: square;
+}
+
+/* aligned list */
+.listContainer table {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    border-collapse: collapse;
+}
+
+.listContainer table .singleLine{
+	white-space: nowrap;
+    overflow: hidden;   
+    text-overflow: ellipsis;
+}
+
+.listContainer table .alignTop{
+	vertical-align: top;
+}
+
+
+/* side button */
+.optionBagian {
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: normal;
+    border-radius: 15px;
+    background-color: var(--body-background, white);
+    min-height: 75px;
+}
+
+.optionBagian:hover {
+    color: var(--button-color, #0075FF);
+    background-color: var(--button-background, #BBDAFF);
+}
+
+/* dropdown triangles */
+.triangleSide {
+	--r: 2px;
+	margin-top: 3px;
+	width: 18px;
+    height: 18px;
+	aspect-ratio: 1/cos(30deg);
+	--_g:calc(tan(60deg)*var(--r)) top var(--r),#000 98%,#0000 101%;
+	-webkit-mask:
+	  conic-gradient(from 150deg at 50% calc(3*var(--r)/2 - 100%),#000 60deg,#0000 0)
+	   0 0/100% calc(100% - 3*var(--r)/2) no-repeat,
+	  radial-gradient(var(--r) at 50% calc(100% - 2*var(--r)),#000 98%,#0000 101%),
+	  radial-gradient(var(--r) at left  var(--_g)),
+	  radial-gradient(var(--r) at right var(--_g));
+	clip-path: polygon(50% 100%,100% 0,0 0);
+	background: var(--dropdown-triangle, #A3A3A3);
+  }
+  
+.triangleSide:hover {
+    background: var(--dropdown-triangle-hover, black);
+    cursor: pointer;
+}
+
+.triangleSide.dropped {
+	--r:2px; 
+	margin-top: 3px;
+	width: 18px;
+	aspect-ratio: 1/cos(30deg);
+	--_g:calc(tan(60deg)*var(--r)) bottom var(--r),#000 98%,#0000 101%;
+	-webkit-mask:
+	  conic-gradient(from -30deg at 50% calc(200% - 3*var(--r)/2),#000 60deg,#0000 0)
+	   0 100%/100% calc(100% - 3*var(--r)/2) no-repeat,
+	  radial-gradient(var(--r) at 50% calc(2*var(--r)),#000 98%,#0000 101%),
+	  radial-gradient(var(--r) at left  var(--_g)),
+	  radial-gradient(var(--r) at right var(--_g));
+	clip-path: polygon(50% 0,100% 100%,0 100%);
+	background: var(--dropdown-triangle-hover, black);
+  }
+
+  @media (max-width: 1600px) {
+    .imageContainer img{
+		max-width: 80%;
+	}
+  }
+  @media (max-width: 1440px) {
+    .optionBagian {
+		font-size: 21px;
+		min-height: 65px;
+		padding-left: 50px;
+	}
+	.subListContainer {
+		padding-left: 25px;
+	}
+  }
+
+  @media (max-width: 1080px) {
+	.optionBagian {
+		font-size: 21px;
+		min-height: 60px;
+		padding-left: 45px;
+	}
+	.triangleSide {
+		width: 15px;
+		height: 15px;
+	}
+
+	.triangleSide.dropped {
+		width: 15px;
+		height: 15px;
+	}
+
+	.listItem{
+		gap: 8px
+	}
+  }
+
+  @media (max-width: 860px) {
+	.triangleSide {
+		width: 10px;
+		height: 10px;
+		--r:0.5px; 
+	}
+
+	.triangleSide.dropped {
+		width: 10px;
+		height: 10px;
+		--r:0.5px; 
+	}
+    .optionBagian {
+		font-size: 14px;
+		padding-left: 40px;
+		min-height: 50px;
+	}
+
+	.subListContainer {
+		padding-left: 15px;
+	}.listItem{
+		gap: 5px
+	}
+  }
+
+  @media (max-width: 700px) {
+    .optionBagian {
+		padding-left: 30px;
+		min-height: 50px;
+	}
+  }
